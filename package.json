@@ -10,6 +10,8 @@
     "precopy": "mkdir -p ./dist/public",
     "copy": "cp -r ./client/public/* ./dist/public/",
     "lint": "eslint client/src",
+    "s:parcel": "parcel client/src/index.html",
+    "s:fuse": "node fuse.js",
     "start": "webpack-dev-server --progress --colors --content-base ./client/public --config ./client/webpack.dev.config.js"
   },
   "repository": {
@@ -36,11 +38,16 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
+    "fuse-box": "^2.5.0-beta.1",
+    "fuse-test-runner": "^1.0.16",
+    "fuse-tools": "^1.0.5",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.5.3",
+    "parcel-bundler": "^1.2.0",
     "postcss-loader": "^2.0.6",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
+    "typescript": "^2.6.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.7.1"
   },

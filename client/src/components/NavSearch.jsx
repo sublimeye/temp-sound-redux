@@ -54,7 +54,7 @@ class NavSearch extends Component {
         <input
           ref={(node) => { this.input = node; }}
           className="nav-search__input"
-          placeholder="SEARCH"
+          placeholder="SEARCH "
           onKeyPress={this.onKeyPress}
           type="text"
         />
